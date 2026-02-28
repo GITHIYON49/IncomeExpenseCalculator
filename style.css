@@ -1,0 +1,46 @@
+body {
+  background: #f5f6fa;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 99px;
+}
+
+
+.type-toggle input[type="radio"] {
+  display: none;
+}
+.type-toggle input#t-income:checked ~ div label[for="t-income"] {
+  background: #d1fae5;
+  color: #065f46;
+  border-color: #10b981;
+  font-weight: 700;
+}
+.type-toggle input#t-expense:checked ~ div label[for="t-expense"] {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #ef4444;
+  font-weight: 700;
+}
+
+
+.filter-pill input[type="radio"] {
+  display: none;
+}
+.filter-pill input[type="radio"]:checked + label {
+  background: #111827;
+  color: #ffffff;
+}
+
+
+.yellow-focus:focus {
+  outline: none;
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
