@@ -1,4 +1,4 @@
-let entries = JSON.parse(localStorage.getItem("cashflow_v2") || "[]");
+let entries = JSON.parse(localStorage.getItem("income_expense_data") || "[]");
 let editId = null;
 
 const $ = (id) => document.getElementById(id);
@@ -23,7 +23,7 @@ const getType = () =>
   document.querySelector('input[name="entry-type"]:checked').value;
 const getFilter = () =>
   document.querySelector('input[name="filter"]:checked').value;
-const save = () => localStorage.setItem("cashflow_v2", JSON.stringify(entries));
+const save = () => localStorage.setItem("income_expense_data", JSON.stringify(entries));
 
 function showToast(msg, bg = "#111827") {
   const t = $("toast");
